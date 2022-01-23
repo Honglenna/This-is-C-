@@ -7,6 +7,8 @@ namespace IntegerTypes
         static void Main(string[] args)
         {
             sbyte a = -10;
+            // sbyte a = -5000_0000_0000;
+            // cannot implicitly convert type 'long' to 'sbyte'. An explicit conversion exists (are you missing a cast?)
             byte b = 40;
 
             Console.WriteLine($"a={a}, b={b}");
