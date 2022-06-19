@@ -15,7 +15,16 @@ namespace StringFormatDateTime
 
             CultureInfo ciKo = new CultureInfo("ko-KR");
             WriteLine();
-            WriteLine(dt.ToString("yyyy-MM"));
+            WriteLine(dt.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciKo));
+            WriteLine(dt.ToString("yyyy-MM-dd HH:mm:ss (dddd)", ciKo));
+            WriteLine(dt.ToString(ciKo));
+
+            CultureInfo ciEn = new CultureInfo("en-US");
+            WriteLine();
+            WriteLine(dt.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciEn));
+            WriteLine(dt.ToString("yyyy-MM-dd HH:mm:ss (dddd)", ciEn));
+            WriteLine(dt.ToString(ciEn));
+
         }
     }
 }
