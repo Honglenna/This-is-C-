@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace IncDecOperator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            System.Console.WriteLine(a++);
+            System.Console.WriteLine(++a);
+
+            System.Console.WriteLine(a--);
+            System.Console.WriteLine(--a);
+        }
+    }
+}
